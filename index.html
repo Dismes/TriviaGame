@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="assets\css\style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="row">
+            <div class="col-md-5"></div>
+            <div class="col-md-1">
+                <h2>Timer</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-1" id="TimeLeft">
+                Time left
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10" id="Question">
+                Question
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <div class="btn-group-vertical btn-block">
+                    <button type="button" class="btn btn-primary" id="Answer_1" data-toggle="modal" data-target="#myModal">Open Modal</button>
+                    <button type="button" class="btn btn-primary" id="Answer_2">Answer_2</button>
+                    <button type="button" class="btn btn-primary" id="Answer_3">Answer_3</button>
+                    <button type="button" class="btn btn-primary" id="Answer_4">Answer_4</button>
+                    <button type="button" class="btn btn-primary" id="ReadyButton">rEADY</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <p>Are you Sure?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" id="YesButton" class="btn btn-default" data-dismiss="modal">Yes</button>
+                        <button type="button" id="NoButton" class="btn btn-default" data-dismiss="modal">No</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <footer>
+
+        </footer>
+</body>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets\JavaScript\app.js"></script>
+
+</html>
