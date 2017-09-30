@@ -12,58 +12,93 @@
 
 <body>
     <div id="wrapper">
-        <div class="row">
-            <div class="col-md-5"></div>
-            <div class="col-md-1">
-                <h2>Timer</h2>
+        <div id="LoadingScreen">
+            <div class="row">
+                <div class="col-md-12" style="text-align: center">
+                    <div id="Timeleft">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12" style="text-align: center">
+                    <div id="WinnerOrLower">
+                        asdf
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12" style="text-align: center">
+                    <div id="RightAnswer">
+                        asdfasd
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-4"></div>
-            <div class="col-md-1" id="TimeLeft">
-                Time left
+        <div id="StartMenu">
+            <div class="row">
+                <div class="col-md-12" style="text-align:center;">
+                    <h1>Welcome to The Trivia Game!</h1>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-1"></div>
-            <div class="col-md-10" id="Question">
-                Question
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-1"></div>
-            <div class="col-md-10">
-                <div class="btn-group-vertical btn-block">
-                    <button type="button" class="btn btn-primary" id="Answer_1" data-toggle="modal" data-target="#myModal">Open Modal</button>
-                    <button type="button" class="btn btn-primary" id="Answer_2">Answer_2</button>
-                    <button type="button" class="btn btn-primary" id="Answer_3">Answer_3</button>
-                    <button type="button" class="btn btn-primary" id="Answer_4">Answer_4</button>
-                    <button type="button" class="btn btn-primary" id="ReadyButton">rEADY</button>
+            <div class="row">
+                <div class="col-md-12" style="text-align:center;">
+                    <button type="button" class="btn btn-primary" id="StartTheQuiz">Start The Quiz!</button>
                 </div>
             </div>
         </div>
-
-        <!-- Modal -->
-        <div class="modal fade" id="myModal" role="dialog">
-            <div class="modal-dialog">
-
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <p>Are you Sure?</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" id="YesButton" class="btn btn-default" data-dismiss="modal">Yes</button>
-                        <button type="button" id="NoButton" class="btn btn-default" data-dismiss="modal">No</button>
+        <div id="MainGame">
+            <div class="row">
+                <div class="col-md-5"></div>
+                <div class="col-md-1">
+                    <h2 id="timer">Timer</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-1" id="TimeLeft">
+                    Time left
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-10" id="Question">
+                    Question
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                    <div class="btn-group-vertical btn-block">
+                        <button type="button" class="btn btn-primary" id="Answer_1" data-toggle="modal" data-target="#myModal">Open Modal</button>
+                        <button type="button" class="btn btn-primary" id="Answer_2" data-toggle="modal" data-target="#myModal">Answer_2</button>
+                        <button type="button" class="btn btn-primary" id="Answer_3" data-toggle="modal" data-target="#myModal">Answer_3</button>
+                        <button type="button" class="btn btn-primary" id="Answer_4" data-toggle="modal" data-target="#myModal">Answer_4</button>
                     </div>
                 </div>
+            </div>
 
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <p>Are you Sure?</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" id="YesButton" class="btn btn-default" data-dismiss="modal">Yes</button>
+                            <button type="button" id="NoButton" class="btn btn-default" data-dismiss="modal">No</button>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
+    </div>
 
-        <footer>
+    <footer>
 
-        </footer>
+    </footer>
 </body>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
